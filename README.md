@@ -4,11 +4,9 @@
 
 ## 怎么做出来的
 
-1. 两个项目是**并行**做的，不是先后替代。
-2. 一开始先用 **personal agent**，把想法放进去让它实现；personal agent 做得比较慢。
-3. 同时用 **Grok Bot**（大领导 / 打工人流水线）直接做；落地更快，过程中胡同学有过修正。
-
-合到本仓只是方便并排看。不吹谁更好，只写清来源和跑法。
+- 先跟 **personal agent** 交流，把设计想法告诉它；personal agent 据此做了一份，就是现在的 **mini-agent**（TypeScript）。
+- **Grok Bot**（大领导 / 打工人流水线）是更放开、直接开做的做法，做出的是 **min-agent**（Python）；过程中胡同学有过修正。
+- 两边是**并行**推进的，合到本仓方便并排对照。不吹谁更好，只写清来源和跑法。
 
 ## 两个项目
 
@@ -30,7 +28,7 @@ python main.py --tui
 
 ### mini-agent（TypeScript）
 
-personal agent 做出来的 TypeScript 最小 Agent。
+personal agent 按设计想法做出来的 TypeScript 最小 Agent。
 
 详细跑法见 [mini-agent/README.md](mini-agent/README.md)。
 
