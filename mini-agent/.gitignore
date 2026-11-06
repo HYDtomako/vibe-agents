@@ -1,0 +1,25 @@
+# 依赖与构建产物
+node_modules/
+dist/
+
+# 本地环境变量（模型凭据只放这里，不进仓库）
+.env
+.env.local
+.env.*.local
+
+# 日志与临时文件
+*.log
+.DS_Store
+Thumbs.db
+
+# 运行时生成的记忆（每人本地不同，不进仓库）
+memory/
+
+# 会话持久化目录（每个会话一个 <id>.json，本地数据不进仓库）
+.sessions/
+
+# 用量记账文件（--usage 或 AGENT_USAGE_FILE 开启，本地数据不进仓库）
+.agent-usage.json
+
+# trace 落盘（每次 run 一份 .trace/<runId>/trace.markdown，本地运行产物不进仓库）
+.trace/

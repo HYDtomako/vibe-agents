@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "min-agent"
+version = "0.6.0"
+description = "Minimal Python agent. Module 6: Textual TUI over the same session loop."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["python-dotenv>=1.0.1", "textual>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agent*", "tools*", "sessions*", "llm*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

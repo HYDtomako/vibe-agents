@@ -1,0 +1,29 @@
+﻿# secrets / local env
+.env
+**/.env
+
+# Python
+.venv/
+**/__pycache__/
+**/*.pyc
+.pytest_cache/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+.trace/
+
+# runtime data
+**/sessions/data/
+**/logs/
+**/.sessions/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

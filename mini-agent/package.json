@@ -1,0 +1,24 @@
+{
+  "name": "mini-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "最小可用 Agent Runtime 骨架：agent loop + 模型适配 + 工具注册 + trace（零运行时依赖）",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/cli.ts",
+    "dev": "tsx watch src/cli.ts",
+    "test": "tsx --test tests/loop.test.ts tests/errors.test.ts tests/retry.test.ts tests/usage.test.ts tests/calculator.test.ts tests/registry.test.ts tests/model.test.ts tests/tools-base.test.ts tests/tools-fs.test.ts tests/weather.test.ts tests/context.test.ts tests/memory.test.ts tests/session.test.ts tests/isolation.test.ts tests/trace.test.ts tests/env.test.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.typecheck.json"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
