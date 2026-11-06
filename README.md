@@ -22,7 +22,7 @@ python main.py --tui
 
 ### mini-agent（TypeScript）
 
-用你自己的 **PA（personal-agent）** 做出来的 TypeScript 最小 Agent。
+用你自己的 **personal agent** 做出来的 TypeScript 最小 Agent。
 
 进入目录与详细跑法见 [mini-agent/README.md](mini-agent/README.md)。
 
